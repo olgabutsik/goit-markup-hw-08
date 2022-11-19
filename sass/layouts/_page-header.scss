@@ -1,0 +1,133 @@
+.nav-menu-list .nav-menu-list_item + .nav-menu-list_item,
+.list-contacts .nav-menu-list_item + .nav-menu-list_item {
+  margin-left: 50px;
+}
+
+.list-contacts_icon-email-tel {
+  margin-left: 50px;
+}
+
+.main-nav,
+.container-header-top {
+  display: flex;
+  align-items: $center;
+}
+.nav-menu-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-menu-list,
+.list-contacts_email-ref,
+.list-contacts_tel-ref {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-menu_page {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--heading-text-color);
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--click-color);
+    cursor: pointer;
+  }
+}
+.nav-menu_current-page {
+  @extend .nav-menu_page;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--click-color);
+  }
+  &,
+  &:hover,
+  &:focus {
+    color: var(--click-color);
+    cursor: pointer;
+  }
+}
+
+.nav-menu-contacts {
+  @extend .nav-menu_page;
+  &:hover,
+  &:focus {
+    color: var(--click-color);
+    cursor: pointer;
+  }
+}
+
+.nav-menu-list_item {
+  position: relative;
+}
+
+.list-contacts_tel-ref,
+.list-contacts_email-ref {
+  display: inline-flex;
+  color: var(--paragraph-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  gap: 10px;
+  transition: color 250ms var(--timing-function);
+}
+.header-top {
+  border-bottom: var(--header-bottom-border) 1px solid;
+}
+
+.icon-smartphone {
+  fill: var(--paragraph-color);
+  transition: fill 250ms var(--timing-function);
+  .list-contacts_tel-ref:hover &,
+  &:hover {
+    fill: var(--click-color);
+  }
+  &:focus {
+    fill: var(--click-color);
+  }
+}
+.icon-envelope {
+  fill: var(--paragraph-color);
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+  .list-contacts_email-ref:hover & {
+    fill: var(--click-color);
+  }
+  &:focus {
+    fill: var(--click-color);
+  }
+}
+
+.tel-ref:focus .icon-smartphone,
+.list-contacts_email-ref:focus .icon-envelope {
+  fill: var(--click-color);
+}
+
+
+.nav-menu_current-page,
+.nav-menu_page,
+.nav-menu-contacts {
+  text-decoration: none;
+}
+.list-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.list-contacts_tel-ref:hover,
+.list-contacts_tel-ref:focus,
+.list-contacts_email-ref:hover,
+.list-contacts_email-ref:focus {
+  cursor: pointer;
+  color: var(--click-color);
+}

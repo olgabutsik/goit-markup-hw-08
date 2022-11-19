@@ -1,0 +1,24 @@
+.main-section {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--bg-color-main-section);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img-hero.jpg");
+  background-position: center;
+  text-align: center;
+}
+.main-section_heading {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--main-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

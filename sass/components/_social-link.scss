@@ -1,0 +1,52 @@
+.footer-social-links {
+  margin-left: 70px;
+}
+
+.insta-footer,
+.twitter-footer,
+.facebook-footer,
+.linkedn-footer {
+  fill: var(--main-bg-color);
+}
+
+.social-link-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: $centerText;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--click-color);
+  }
+}
+.insta,
+.twitter,
+.facebook,
+.linkedn {
+  fill: var(--clients-logo-color);
+  transition: fill 250ms var(--timing-function);
+}
+
+.social-link-icon:hover .insta,
+.social-link-icon:focus .insta,
+.social-link-icon:hover .twitter,
+.social-link-icon:focus .twitter,
+.social-link-icon:hover .facebook,
+.social-link-icon:focus .facebook,
+.social-link-icon:hover .linkedn,
+.social-link-icon:focus .linkedn {
+  fill: var(--main-bg-color);
+}
+
+.staffer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+}

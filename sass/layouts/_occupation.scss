@@ -1,0 +1,36 @@
+.container-occupation_img {
+  position: relative;
+}
+
+
+.occupation-section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.container-occupation_item {
+  display: flex;
+  margin-top: 50px;
+}
+
+
+.container-occupation_item
+  .container-occupation_img
+  + .container-occupation_img {
+  margin-left: 30px;
+}
+
+.container-occupation_text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--main-bg-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 27px;
+}

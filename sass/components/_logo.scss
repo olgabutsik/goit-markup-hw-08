@@ -1,0 +1,22 @@
+.main-nav_logo,
+.footer-section_logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  color: var(--logo-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo-span {
+  color: var(--click-color);
+}
+.footer-section_logo {
+  padding: 0;
+}
+
+.footer-logo {
+  color: var(--main-bg-color);
+}

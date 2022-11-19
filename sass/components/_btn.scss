@@ -1,0 +1,131 @@
+
+
+.main-section_btn {
+  padding: 10px 32px;
+  margin-top: 30px;
+  background-color: var(--click-color);
+  color: var(--main-bg-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: $centerText;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: $radiusBtn;
+  border: none;
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--bg-btn-color);
+  }
+}
+
+.send-btn-footer {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  background-color: var(--click-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: $radiusBtn;
+  color: var(--main-bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border: none;
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--bg-btn-color);
+  }
+}
+
+.footer-btn-submit {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  margin-left: 12px;
+  background-color: var(--click-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: $radiusBtn;
+  color: var(--main-bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border: none;
+  transition: background-color 250ms var(--timing-function);
+  &:focus {
+    background-color: var(--bg-btn-color);
+  }
+}
+
+.portfolio-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: $centerText;
+  gap: 8px;
+}
+.portfolio_first-btn {
+  width: 73px;
+  height: 38px;
+  background-color: var(--click-color);
+  color: var(--main-bg-color);
+}
+.portfolio_first-btn,
+.portfolio_second-btn,
+.portfolio_third-btn,
+.portfolio_fourth-btn,
+.portfolio_fifth-btn {
+  text-align: center;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  font-family: inherit;
+  border-radius: $radiusBtn;
+  border: none;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), filter 250ms var(--timing-function);
+}
+.portfolio_second-btn,
+.portfolio_third-btn,
+.portfolio_fourth-btn,
+.portfolio_fifth-btn {
+  height: 38px;
+  background-color: var(--team-section-color);
+  color: var(--heading-text-color);
+}
+.portfolio_second-btn {
+  width: 125px;
+}
+.portfolio_third-btn {
+  width: 112px;
+}
+.portfolio_fourth-btn {
+  width: 103px;
+}
+.portfolio_fifth-btn {
+  width: 130px;
+}
+.portfolio_first-btn:hover,
+.portfolio_first-btn:focus,
+.portfolio_second-btn:hover,
+.portfolio_second-btn:focus,
+.portfolio_third-btn:hover,
+.portfolio_third-btn:focus,
+.portfolio_fourth-btn:hover,
+.portfolio_fourth-btn:focus,
+.portfolio_fifth-btn:hover,
+.portfolio_fifth-btn:focus {
+  background-color: var(--click-color);
+  color: var(--main-bg-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
