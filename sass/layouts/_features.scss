@@ -1,19 +1,19 @@
-.features-section_list {
+.features_list {
   width: 1170px;
   display: flex;
 }
-.features-section_heading {
+.features_heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--heading-text-color);
 }
-.features-section_list .features-section_item {
+.features_list .features_item {
   width: calc((100% - 90px) / 4);
 }
 
-.features-section_item::before {
+.features_item::before {
   display: block;
   content: "";
   height: 120px;
@@ -24,23 +24,23 @@
   background-position: center;
 }
 
-.features-section_item:nth-child(1)::before {
+.features_item:nth-child(1)::before {
   background-image: url("../images/antenna\ 2.svg");
 }
-.features-section_item:nth-child(2)::before {
+.features_item:nth-child(2)::before {
   background-image: url("../images/clock\ 2.svg");
 }
-.features-section_item:nth-child(3)::before {
+.features_item:nth-child(3)::before {
   background-image: url("../images/diagram\ 2.svg");
 }
-.features-section_item:nth-child(4)::before {
+.features_item:nth-child(4)::before {
   background-image: url("../images/astronaut\ 2.svg");
 }
 
-.features-section_list .features-section_item + .features-section_item {
+.features_list .features_item + .features_item {
   margin-left: 30px;
 }
-.features-section_text {
+.features_text {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;

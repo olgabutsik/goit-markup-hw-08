@@ -5,14 +5,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-.container-hero,
-.container-features,
-.container-occupation,
-.container-team,
-.container-header-top,
-.footer-container,
-.container-clients,
-.portfolio-container {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -52,14 +45,13 @@ address {
   margin: 0;
 }
 
-
-.occupation-section,
+.occupation,
 .team,
 .clients-section {
   text-align: center;
 }
 
-.occupation-section_heading,
+.occupation_heading,
 .team_heading,
 .clients-heading {
   font-weight: 700;

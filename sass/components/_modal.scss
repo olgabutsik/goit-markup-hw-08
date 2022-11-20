@@ -48,20 +48,18 @@
   justify-content: center;
   align-items: center;
   transition: border-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border-color: var(--click-color);
+  }
 }
 .icon-x {
   fill: var(--logo-color);
   transition: fill 250ms var(--timing-function);
-}
-
-.btn-close-modal:hover .icon-x,
-.btn-close-modal:focus .icon-x {
-  fill: var(--click-color);
-}
-
-.btn-close-modal:hover,
-.btn-close-modal:focus {
-  border-color: var(--click-color);
+  .btn-close-modal:hover &,
+  .btn-close-modal:focus & {
+    fill: var(--click-color);
+  }
 }
 
 .heading-form {
@@ -121,8 +119,6 @@ input[type="checkbox"] {
   height: 15px;
 }
 
-.input-name,
-.input-mail,
 .input-tel {
   width: 100%;
   height: 40px;
@@ -133,12 +129,23 @@ input[type="checkbox"] {
   padding: 14px 42px;
   transition: border-color 250ms var(--timing-function);
   outline: none;
+  &:focus {
+    border: 1px solid var(--click-color);
+  }
 }
 
-.input-name:focus,
-.input-mail:focus,
-.input-tel:focus {
-  border: 1px solid var(--click-color);
+.input-name {
+  @extend .input-tel;
+  &:focus {
+    border: 1px solid var(--click-color);
+  }
+}
+
+.input-mail {
+  @extend .input-tel;
+  &:focus {
+    border: 1px solid var(--click-color);
+  }
 }
 
 .input-block {
@@ -152,10 +159,9 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
   fill: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
-}
-
-.input-name:focus + .icon-person {
-  fill: var(--click-color);
+  .input-name:focus + & {
+    fill: var(--click-color);
+  }
 }
 
 .icon-phone {
@@ -165,10 +171,9 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
   fill: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
-}
-
-.input-tel:focus + .icon-phone {
-  fill: var(--click-color);
+  .input-tel:focus + & {
+    fill: var(--click-color);
+  }
 }
 
 .icon-blackenvelope {
@@ -178,10 +183,9 @@ input[type="checkbox"] {
   transform: translate(-50%, -50%);
   fill: var(--heading-text-color);
   transition: fill 250ms var(--timing-function);
-}
-
-.input-mail:focus + .icon-blackenvelope {
-  fill: var(--click-color);
+  .input-mail:focus + & {
+    fill: var(--click-color);
+  }
 }
 
 .check-box {
@@ -190,10 +194,9 @@ input[type="checkbox"] {
 
 .label-policy {
   display: flex;
-}
-
-.label-policy:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .checkbox-icon {
@@ -207,17 +210,16 @@ input[type="checkbox"] {
   border-radius: 2px;
   transition: background-color 250ms var(--timing-function),
     background-image 250ms var(--timing-function);
-}
-
-.check-box:checked + .checkbox-icon {
-  background-color: var(--click-color);
-  width: 16px;
-  height: 15px;
-  background-image: url("../images/check.svg");
-  background-size: contain;
-  background-origin: content-box;
-  border-color: transparent;
-  background-repeat: no-repeat;
+  .check-box:checked + & {
+    background-color: var(--click-color);
+    width: 16px;
+    height: 15px;
+    background-image: url("../images/check.svg");
+    background-size: contain;
+    background-origin: content-box;
+    border-color: transparent;
+    background-repeat: no-repeat;
+  }
 }
 
 .agree {
@@ -229,9 +231,8 @@ input[type="checkbox"] {
   color: var(--click-color);
   text-decoration: underline;
   transition: color 250ms var(--timing-function);
-}
-
-.contract-terms:hover,
-.contract-terms:focus {
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }

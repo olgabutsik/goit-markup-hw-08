@@ -2,19 +2,19 @@
   background-color: var(--team-section-color);
 }
 
-.team_list-staffer,
+.team_list,
 .clients-list {
   display: flex;
   margin-top: 50px;
   list-style-type: none;
 }
-.team_card-staffer {
+.team_card {
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team_data-staffer {
+.team_data {
   padding-top: 30px;
   padding-bottom: 16px;
   padding-left: 32px;
@@ -36,6 +36,6 @@
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
 }
-.team_list-staffer .team_card-staffer + .team_card-staffer {
+.team_list .team_card + .team_card {
   margin-left: 30px;
 }

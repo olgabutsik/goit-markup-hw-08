@@ -1,26 +1,22 @@
-.container-occupation_img {
+.occupation_item {
   position: relative;
 }
 
-
-.occupation-section {
+.occupation {
   padding-top: 0;
   padding-bottom: 94px;
 }
 
-.container-occupation_item {
+.occupation_list {
   display: flex;
   margin-top: 50px;
 }
 
-
-.container-occupation_item
-  .container-occupation_img
-  + .container-occupation_img {
+.occupation_list .occupation_item + .occupation_item {
   margin-left: 30px;
 }
 
-.container-occupation_text {
+.occupation_text {
   position: absolute;
   bottom: 0;
   width: 100%;

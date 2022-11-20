@@ -1,0 +1,48 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-check-1 {
+  width: 1.2998046875em;
+}
+
+.icon-LogoClient1 {
+  width: 1.7666015625em;
+}
+
+.icon-LogoClient2 {
+  width: 1.7666015625em;
+}
+
+.icon-LogoClient3 {
+  width: 1.7666015625em;
+}
+
+.icon-LogoClient4 {
+  width: 1.7666015625em;
+}
+
+.icon-LogoClient5 {
+  width: 1.7666015625em;
+}
+
+.icon-LogoClient6 {
+  width: 1.7666015625em;
+}
+
+.icon-menu_nav24px {
+  width: 1.5em;
+}

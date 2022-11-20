@@ -13,12 +13,11 @@
 .portfolio-class-link {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
-}
-
-.portfolio-class-link:hover,
-.portfolio-class-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .portfolio-cards:nth-child(3n) {
@@ -64,9 +63,8 @@
   color: var(--main-bg-color);
   transform: translateY(0);
   transition: transform 250ms var(--timing-function);
-}
-
-.portfolio-class-link:hover .portfolio-overlay-text,
-.portfolio-class-link:focus .portfolio-overlay-text {
-  transform: translateY(-100%);
+  .portfolio-class-link:hover &,
+  .portfolio-class-link:focus & {
+    transform: translateY(-100%);
+  }
 }
