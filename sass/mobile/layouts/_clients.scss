@@ -1,0 +1,129 @@
+.clients-list-box {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+    align-items: baseline;
+  }
+}
+
+.clients-list {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 1170px;
+    gap: 30px;
+  }
+}
+
+.clients-section {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
+}
+
+.clients-list-mobile-right {
+  @media screen and (max-width: 767px) {
+    width: 50%;
+  }
+}
+
+.clients-list-mobile-left {
+  @media screen and (max-width: 767px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+}
+
+.clients-list-mobile-left .clients-logo {
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
+}
+
+.clients-logo {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--click-color);
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 210px;
+    border: 1px solid var(--clients-logo-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 226px;
+    border: 1px solid var(--clients-logo-color);
+    border-radius: 4px;
+  }
+}
+
+.clients-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--clients-logo-color);
+  border-radius: 4px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  transition: border 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--click-color);
+  }
+  @media screen and (max-width: 767px) {
+    border: none;
+  }
+  @media screen and (min-width: 768px) {
+    border: none;
+  }
+  @media screen and (min-width: 768px) {
+    &:hover,
+    &:focus {
+      border: none;
+    }
+  }
+}
+.clients-icon {
+  fill: var(--clients-logo-color);
+  transition: fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--click-color);
+    margin-top: 15px;
+  }
+  .clients-logo:hover & {
+    fill: var(--click-color);
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+  }
+}

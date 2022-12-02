@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    >
+    />
 
-    
-    <link rel="stylesheet" href="./css/styles.css" >
-    <link rel="stylesheet" href="./css/main.min.css" >
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
     <header class="header-top">
-      <div class="container-header-top">
+      <div class="container-header-desktop">
         <nav class="main-nav">
           <a href="./index.html" class="main-nav_logo"
             ><span class="logo-span">Web</span>Studio</a
@@ -49,17 +47,95 @@
           <li class="list-contacts_icon-email-tel">
             <a href="mailto:info@devstudio.com" class="list-contacts_email-ref"
               ><svg class="icon-envelope" width="16" height="12">
-                <use href="./images/symbol-defs3.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+                <use href="./images/symbol-defs3.svg#icon-envelope"></use></svg>info@devstudio.com</a
+            >
           </li>
           <li class="list-contacts_icon-email-tel">
             <a href="tel:+380961111111" class="list-contacts_tel-ref"
               ><svg class="icon-smartphone" width="10" height="16">
                 <use
-                  href="./images/symbol-defs3.svg#icon-smartphone"
-                ></use></svg>+38 096 111 11 11</a
+                  href="./images/symbol-defs3.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
+      </div>
+
+      <div class="container-header-top header-mobile">
+        <a href="./index.html" class="main-nav_logo"
+          ><span class="logo-span">Web</span>Studio</a
+        >
+        <div class="nav-container-mobile" id="nav-container-mobile" data-menu>
+          <nav class="main-nav">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-list_item-mob">
+                <a href="./index.html" class="nav-menu_current-page">Студія</a>
+              </li>
+              <li class="nav-menu-list_item-mob">
+                <a href="./portfolio.html" class="nav-menu_page">Портфоліо</a>
+              </li>
+              <li class="nav-menu-list_item-mob">
+                <a href="#" class="nav-menu-contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="list-contacts-mob">
+            <li class="list-contacts_icon-email-tel">
+              <a
+                href="mailto:info@devstudio.com"
+                class="list-contacts_email-ref"
+                ><svg class="icon-envelope" width="16" height="12">
+                  <use
+                    href="./images/symbol-defs3.svg#icon-envelope"
+                  ></use></svg>info@devstudio.com</a
+              >
+            </li>
+            <li class="list-contacts_icon-email-tel">
+              <a href="tel:+380961111111" class="list-contacts_tel-ref"
+                ><svg class="icon-smartphone" width="10" height="16">
+                  <use
+                    href="./images/symbol-defs3.svg#icon-smartphone"
+                  ></use></svg>+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu">
+            <li class="mobile-menu_list">
+              <a href="" class="mobile-menu_social-links">Instagram</a>
+            </li>
+            <li class="mobile-menu_list">
+              <a href="" class="mobile-menu_social-links">Twitter</a>
+            </li>
+            <li class="mobile-menu_list">
+              <a href="" class="mobile-menu_social-links">Facebook</a>
+            </li>
+            <li class="mobile-menu_list">
+              <a href="" class="mobile-menu_social-links">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="nav-menu_button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="24"
+            height="24"
+            aria-label="Перемикач мобільного меню"
+            class="icon-menu_nav"
+          >
+            <use
+              class="icon-menu_nav"
+              href="./imgAdapt/imgMobile/sprite.svg#icon-menu_nav24px"
+            ></use>
+            <use
+              class="icon-close"
+              href="./imgAdapt/imgMobile/sprite.svg#icon-close_24px"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -91,7 +167,8 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link">
                 <div class="portfolio-overlay-box">
-                  <img src="./images/tehnocriak.jpg" width="370" alt="laptop" />
+                  <img
+                   src="./images/tehnocriak.jpg" width="354" alt="laptop" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -108,9 +185,16 @@
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
                   <img
+                    srcset="
+                      ./images/portfolio11xmob.jpg 450w,
+                      ./images/portfolio12xmob.jpg 900w,
+                      ./images/portfolio11xtab.jpg 354w,
+                      ./images/portfolio12xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
                     src="./images/neworlean.jpg"
                     alt="two basketball players"
-                  />
+                  >
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -128,7 +212,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/seafood.jpg" alt="seafood restaurant" />
+                  <img 
+                  srcset="
+                      ./images/portfolio21xmob.jpg 450w,
+                      ./images/portfolio22xmob.jpg 900w,
+                      ./images/portfolio21xtab.jpg 354w,
+                      ./images/portfolio22xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                   src="./images/seafood.jpg" alt="seafood restaurant" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -144,7 +236,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/prime.jpg" alt="earphones" />
+                  <img
+                  srcset="
+                      ./images/portfolio41xmob.jpg 450w,
+                      ./images/portfolio42xmob.jpg 900w,
+                      ./images/portfolio31xtab.jpg 354w,
+                      ./images/portfolio32xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                   src="./images/prime.jpg" alt="earphones" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -160,7 +260,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/boxes.jpg" alt="boxes" />
+                  <img
+                    srcset="
+                      ./images/portfolio51xmob.jpg 450w,
+                      ./images/portfolio52xmob.jpg 900w,
+                      ./images/portfolio41xtab.jpg 354w,
+                      ./images/portfolio42xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                  src="./images/boxes.jpg" alt="boxes" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -176,7 +284,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/border.jpg" alt="monitor" />
+                  <img
+                    srcset="
+                      ./images/portfolio61xmob.jpg 450w,
+                      ./images/portfolio62xmob.jpg 900w,
+                      ./images/portfolio51xtab.jpg 354w,
+                      ./images/portfolio52xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                  src="./images/border.jpg" alt="monitor" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -192,7 +308,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/limited.jpg" alt="magazine" />
+                  <img 
+                    srcset="
+                      ./images/portfolio71xmob.jpg 450w,
+                      ./images/portfolio72xmob.jpg 900w,
+                      ./images/portfolio61xtab.jpg 354w,
+                      ./images/portfolio62xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                  src="./images/limited.jpg" alt="magazine" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -208,7 +332,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/lab.jpg" alt="label tag" />
+                  <img 
+                  srcset="
+                      ./images/portfolio81xmob.jpg 450w,
+                      ./images/portfolio82xmob.jpg 900w,
+                      ./images/portfolio71xtab.jpg 354w,
+                      ./images/portfolio72xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                  src="./images/lab.jpg" alt="label tag" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -224,7 +356,15 @@
             <li class="portfolio-cards">
               <a href="" class="portfolio-class-link"
                 ><div class="portfolio-overlay-box">
-                  <img src="./images/growingbusi.jpg" alt="laptop" />
+                  <img 
+                  srcset="
+                      ./images/portfolio91xmob.jpg 450w,
+                      ./images/portfolio92xmob.jpg 900w,
+                      ./images/portfolio81xtab.jpg 354w,
+                      ./images/portfolio82xtab.jpg 708w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                  src="./images/growingbusi.jpg" alt="laptop" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -319,5 +459,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

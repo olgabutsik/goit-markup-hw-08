@@ -990,3 +990,16 @@ input[type="checkbox"] {
 .portfolio-class-link:focus .portfolio-overlay-text {
   transform: translateY(-100%);
 } /*# sourceMappingURL=main.min.css.map */
+
+
+
+
+
+
+.nav-menu_button{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color:transparent;
+}
