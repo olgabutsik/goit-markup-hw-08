@@ -220,6 +220,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
+    height: 100vh;
+    overflow-y: auto;
   }
   @media screen and (max-width: 767px) {
     display: none;
@@ -228,6 +231,7 @@
     top: 0;
     left: 0;
     width: 100%;
+     z-index: 1;
   }
 }
 

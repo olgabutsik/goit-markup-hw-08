@@ -68,10 +68,10 @@
           <nav class="main-nav">
             <ul class="nav-menu-list">
               <li class="nav-menu-list_item-mob">
-                <a href="./index.html" class="nav-menu_current-page">Студія</a>
+                <a href="./index.html" class="nav-menu_page">Студія</a>
               </li>
               <li class="nav-menu-list_item-mob">
-                <a href="./portfolio.html" class="nav-menu_page">Портфоліо</a>
+                <a href="./portfolio.html" class="nav-menu_current-page">Портфоліо</a>
               </li>
               <li class="nav-menu-list_item-mob">
                 <a href="#" class="nav-menu-contacts">Контакти</a>
@@ -168,7 +168,14 @@
               <a href="" class="portfolio-class-link">
                 <div class="portfolio-overlay-box">
                   <img
-                   src="./images/tehnocriak.jpg" width="354" alt="laptop" />
+                  srcset="./images/portImg01xmob.jpg 450w,
+                  ./images/portImg02xmob.jpg 900w,
+                  ./images/portImg01xtab.jpg 354w,
+                  ./images/portImg02xtab.jpg 708w"
+
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px  450px"
+                   src="./images/portImg01xdesk.jpg" 
+                    alt="laptop" />
                   <p class="portfolio-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
